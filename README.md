@@ -9,4 +9,4 @@ be added), analyzes selected text and prints:
  - the number of words written in lowercase
  - the number of numbers
  - the sum of all numbers
- - simple bar chart with the frequency of word lenghts
+ - simple bar chart with the frequency of individual word lenghts

@@ -4,7 +4,7 @@
 It's a simple code that let's a user choose from three texts (more texts can 
 be added), analyzes selected text and prints:
  - the total number of words
- - the number of words startsing with capital letter
+ - the number of words starting with capital letter
  - the number of words written in uppercase
  - the number of words written in lowercase
  - the number of numbers

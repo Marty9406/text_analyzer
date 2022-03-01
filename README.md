@@ -7,6 +7,6 @@ be added), analyzes selected text and prints:
  - the number of titlecase words
  - the number of uppercase words
  - the number of lowercase words
- - the number of numbers
+ - the number of numeric strings
  - the sum of all numbers
  - simple bar chart with the frequency of individual word lengths

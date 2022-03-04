@@ -1,5 +1,7 @@
 
-"""author = Martin Rečka"""
+'''
+author = Martin Rečka
+'''
 
 TEXTS = ['''
 Situated about 10 miles west of Kemmerer,
@@ -64,14 +66,13 @@ if not number.isnumeric():
     exit()
 else:
     number = int(number)
-    if 0 < number <= len(TEXTS):
-        pass
-    else:
-        print("Wrong number. terminating the program...")
-        exit()
 
-words_in_text = TEXTS[number-1].split()
-all_words_count = len(words_in_text)
+if 0 < number <= len(TEXTS):
+    words_in_text = TEXTS[number - 1].split()
+    all_words_count = len(words_in_text)
+else:
+    print("Wrong number, terminating the program...")
+    exit()
 
 for word in words_in_text:
     word = word.strip(".,?!:")
@@ -106,5 +107,5 @@ print(
 )
 
 for length, count in sorted(lengths_of_words.items()):
-    print(f"""{str(length).rjust(3, " ")}|{str(count*"*").ljust(17, " ")}|{count}""")
+    print(f"""{str(length).rjust(3)}|{str(count*"*").ljust(17)}|{count}""")
 print(SEPARATOR)

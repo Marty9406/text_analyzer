@@ -45,6 +45,7 @@ lower_words = 0
 numbers_count = 0
 numbers_sum = 0
 lengths_of_words = dict()
+clean_words = []
 
 name = input("Username: ")
 password = input("Password: ")
@@ -69,14 +70,18 @@ else:
 
 if 0 < number <= len(TEXTS):
     words_in_text = TEXTS[number - 1].split()
-    all_words_count = len(words_in_text)
 else:
     print("Wrong number, terminating the program...")
     exit()
 
 for word in words_in_text:
-    word = word.strip(".,?!:")
+    clean_word = word.strip(".,?!:")
+    if clean_word:
+        clean_words.append(clean_word)
 
+all_words_count = len(clean_words)
+
+for word in clean_words:
     if len(word) not in lengths_of_words.keys():
         lengths_of_words[len(word)] = 1
     else:
